@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Potfólio</title>
+</head>
+
+<body>
+    <header>
+        <div class="hearder_conteudo">
+            <h1>Laryssa Carvalho</h1>
+            <p>Web Designer</p>
+        </div>
+    </header>
+
+    <section id="carrossel">
+        <!--Imagens Carrossel(pe)-->
+
+            <div id="demo" class="carousel slides" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+          <img class="img-fluid" src="imagem1.png" alt="imagem 1" style="width: 85%">
+             <div class="carousel-caption">
+                <h3>imagem 1</h3>
+                <p></p>
+             </div>  
+            </div>
+
+            <div class="carousel-item">
+          <img class="img-fluid" src="imagem2.png" alt="imagem 2" style="width: 80%">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+            </div>
+
+            <div class="carousel-item">
+          <img class="img-fluid" src="imagem3.png" alt="imagem 3" style="width: 80%">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+          </div>
+
+          <div class="carousel-item">
+          <img class="img-fluid" src="imagem4.png" alt="imagem 4" style="width: 80%">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+          </div>
+
+          <div class="carousel-item">
+          <img class="img-fluid" src="imagem5.png" alt="imagem 5" style="width: 80%">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"></button>
+         <span class="carousel-control-prev-icon"></span>
+ 
+         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"></button>
+         <span class="carousel-control-next-icon"></span>
+    </section>
+
+    <section id="intro">
+        <!--Breve introdução-->
+        <div class="conteudo">
+            <p><b>Experiência</b></p>
+        Já estagiei na área de Administração   
+            
+            <p><b>Interesses</b></p>
+            
+            <p><b>objetivo</b></p>
+         Recém-formada em Administração em busca de uma oportunidade de me desenvolver profissionalmente, colocando
+        em prática aspectos abordados em sala de aula. Para realizar um bom trabalho em equipe ou individualmente,
+        colaborando assim com meu crescimento profissional e contribuir para a empresa.
+        </div>
+    </section>
+
+    <section id="projetos">
+        <!--Adicione os projetos-->
+        <div class="conteudo">
+            <h2>Projetos 1</h2>
+            <h2>Projetos 2</h2>
+            <h2>Projetos 3</h2>
+            <h2>Projetos 4</h2>
+            <h2>Projetos 5</h2>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <!--Adicione habilidades aqui-->
+        <div class="conteudo">
+        <h2>Habilidades</h2>
+       <p>Determinada
+          Organizada
+          Simpática
+        </p>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <!--Formulario de Contato-->
+        <div class="conteudo">
+            <h2>Contato</h2>
+            <iframe
+         src="https://docs.google.com/forms/d/e/1FAIpQLScYCaQ84fw9rTL3BNpXJCSFd3mLPGKYva4GstvVj6SEdrPj1Q/viewform?embedded=true"
+         width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+    </section>
+
+    <section id="calculo_proj">
+        <!--Calcúlo de projeto-->
+        <div class="conteudo">
+            <h2>Faça um orçamento do seu projeto</h2>
+            <div class="calculo">
+                <label for="tipoprojeto">Tipo de Projeto:</label>
+                <select name="tipoprojeto" id="tipoprojeto">
+                    <option value="Website">Website</option>
+                    <option value="LandingPage">Landing Page</option>
+                    <option value="WebApp">Aplicação Web</option>
+                </select>
+                <!--------------------------------------------------->
+                <label for="horasprojetos">Horas Estimadas:</label>
+                <input type="number" id="horasprojetos" placeholder="Horas">
+                <button onclick="calcularprojeto()">Calcular Preço do Projeto</button>
+                <p id="preco">Preço do Projeto: R$10,00</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>&copy;Laryssa Carvalho</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="perfil.js"></script>
+</body>
+
+</html>
